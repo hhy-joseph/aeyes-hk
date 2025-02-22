@@ -48,6 +48,10 @@ git clone https://github.com/hhy-joseph/aeyes-hk.git
 cd aeyes-hk
 ```
 
+## Demo
+https://github.com/hhy-joseph/aeyes-hk/videos/AEyes-Sample2.mp4
+Watch the demo video above to see AEyes-HK in action!
+
 ### Set Up a Virtual Environment:
 We use uv for creating and managing virtual environments. The virtual environment will be created in the next step during dependency installation.
 
