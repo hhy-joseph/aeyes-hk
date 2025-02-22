@@ -35,7 +35,7 @@ Built with xAI's Grok Vision for image analysis and AWS Polly for Cantonese audi
 
 To run AEyes-HK locally, ensure you have the following:
 
-* Python 3.8+
+* Python 3.11+
 * xAI API Key: Obtain from xAI for Grok Vision access.
 * AWS Credentials: Set up an AWS account with access to Polly.
 * Dependencies: Listed in requirements.txt (see Installation).
@@ -48,18 +48,17 @@ git clone https://github.com/hhy-joseph/aeyes-hk.git
 cd aeyes-hk
 ```
 
-### Set Up a Virtual Environment (optional but recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+### Set Up a Virtual Environment:
+We use uv for creating and managing virtual environments. The virtual environment will be created in the next step during dependency installation.
 
 ### Install Dependencies:
 ```bash
-pip install -r requirements.txt
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
 ```
 
-Required packages include streamlit, openai, boto3, python-dotenv, and others.
+This project uses [uv](https://github.com/astral-sh/uv) for fast, reliable Python package management. Required packages include streamlit, openai, boto3, python-dotenv, and others.
 
 ### Configure Environment Variables:
 Create a `.env` file in the root directory with the following:
@@ -71,7 +70,7 @@ AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 
 ### Run the App:
 ```bash
-streamlit run app.py
+uv streamlit run main.py
 ```
 
 ## Usage
@@ -91,7 +90,7 @@ AEyes-HK might describe: "你面前係一條繁忙嘅街道，有幾架車喺左
 ```text
 aeyes-hk/
 ├── grok_vision_cantonese.py  # Core logic for image processing and audio generation
-├── app.py                   # Streamlit frontend (assumed name based on context)
+├── main.py                   # Streamlit frontend (assumed name based on context)
 ├── requirements.txt         # Python dependencies
 ├── .env                     # Environment variables (not tracked in git)
 ├── README.md                # This file
@@ -131,9 +130,17 @@ This project is licensed under the MIT License. See LICENSE for details (to be a
 * AWS: For Polly's text-to-speech capabilities.
 * Streamlit: For an easy-to-use web framework.
 
+## Support the Project
+
+This project is entirely self-funded, and your support is essential for its continued development and maintenance. If you find AEyes-HK useful or believe in its mission, consider supporting the project:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-%23FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/josephhhy)
+
+Your support helps maintain the servers, improve the AI models, and expand the features to help more visually impaired individuals.
+
 ## Contact
 
-For questions, feedback, or collaboration, reach out at joseph.hohoyin@gmail.com.
+For questions, feedback, or collaboration, reach out at joseph.hohoyin@gmail.com
 
 ---
 
