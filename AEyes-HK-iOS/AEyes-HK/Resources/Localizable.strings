@@ -1,0 +1,98 @@
+/* 
+  Localizable.strings
+  AEyes-HK
+  
+  Created for AEyes-HK on 2/25/2025.
+  Copyright © 2025 AEyes-HK. All rights reserved.
+*/
+
+// MARK: - Common UI
+"app_name" = "AEyes-HK";
+"app_subtitle" = "用相機描述周圍環境 - 為視障人士設計";
+"footer_text" = "由 xAI 同 AWS 提供技術支援";
+
+// MARK: - Main Screen
+"take_photo" = "影相";
+"processing_photo" = "處理緊相片，請稍等...";
+"processing_time" = "處理時間: %.2f 秒";
+"description_title" = "文字";
+"description_label" = "描述";
+"audio_played" = "語音描述已播放 🎙️";
+"audio_error" = "無法生成語音";
+"history_button" = "歷史記錄";
+"settings_button" = "設定";
+
+// MARK: - Alerts
+"error" = "錯誤";
+"camera_error" = "相機錯誤";
+"camera_access_error" = "無法存取相機";
+"photo_processing_error" = "無法處理相片";
+"photo_capturing_error" = "拍照時發生錯誤";
+"network_error" = "網絡連接錯誤";
+"api_error" = "API 錯誤";
+"ok" = "確定";
+"cancel" = "取消";
+"retry" = "重試";
+
+// MARK: - History Screen
+"history_title" = "描述歷史";
+"no_history" = "暫無歷史記錄";
+"clear_history" = "清除歷史";
+"confirm_clear_history" = "確定要清除所有歷史記錄嗎？";
+"delete" = "刪除";
+
+// MARK: - Settings Screen
+"settings_title" = "設定";
+"language_settings" = "語言設定";
+"voice_settings" = "語音設定";
+"accessibility_settings" = "無障礙設定";
+"about" = "關於";
+"feedback" = "意見反饋";
+"rate_app" = "評價應用程式";
+"privacy_policy" = "隱私政策";
+"terms_of_service" = "使用條款";
+"version" = "版本";
+
+// MARK: - Voice Settings
+"voice_speed" = "語音速度";
+"voice_volume" = "語音音量";
+"voice_type" = "語音類型";
+"male_voice" = "男聲";
+"female_voice" = "女聲";
+"test_voice" = "測試語音";
+"test_voice_text" = "你好，這是 AEyes-HK 的語音測試。";
+
+// MARK: - Accessibility Settings
+"larger_text" = "放大文字";
+"high_contrast" = "高對比度";
+"reduce_motion" = "減少動態效果";
+"voiceover_hints" = "VoiceOver 提示";
+
+// MARK: - About Screen
+"about_description" = "AEyes-HK 是為視障人士設計的創新無障礙平台，將實時視覺資訊轉化為詳細的廣東話語音描述。";
+"developers" = "開發者";
+"contact_us" = "聯絡我們";
+"website" = "網站";
+"acknowledgements" = "致謝";
+
+// MARK: - Onboarding
+"welcome" = "歡迎使用 AEyes-HK";
+"onboarding_1_title" = "即時視覺描述";
+"onboarding_1_description" = "只要拍照，就能獲得環境的詳細廣東話語音描述。";
+"onboarding_2_title" = "安全提示";
+"onboarding_2_description" = "自動識別潛在危險和障礙物，確保您的安全。";
+"onboarding_3_title" = "文字閱讀";
+"onboarding_3_description" = "自動閱讀標誌、招牌和文件上的文字。";
+"next" = "下一步";
+"get_started" = "開始使用";
+"skip" = "跳過";
+
+// MARK: - Accessibility Labels
+"camera_view_label" = "相機畫面";
+"camera_view_hint" = "顯示相機畫面的視圖";
+"capture_button_label" = "拍攝照片";
+"capture_button_hint" = "點擊拍攝照片以獲取描述";
+"description_container_label" = "描述詳情";
+"description_container_hint" = "展示照片的詳細描述";
+"audio_status_label" = "語音描述狀態";
+"audio_status_hint" = "顯示語音描述的播放狀態";
